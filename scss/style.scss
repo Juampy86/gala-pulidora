@@ -1,0 +1,239 @@
+$colorTitulos: #555;
+
+$colorSubtitulos: #FF8000;
+body{
+    font-family: monospace;
+    color: dark;
+    margin: 0;
+    padding:1rem;
+}
+footer{
+    background-color: gray darken($color: gray , $amount: 20);
+}
+header{
+    position: relative;
+    
+     nav{
+        padding:1rem 2rem ;    
+         a { 
+            padding: .5rem;
+            color: lightgrey; 
+            text-decoration:none;
+            text-transform: uppercase;
+            margin-left: 1rem;
+
+            &:hover{
+                background-color:darken($color: gray, $amount: 10);
+
+            }
+        }
+     }
+}
+@for $i from 1 through 3 {
+    h#{$i} {font-size: 2.5rem / $i
+    }
+
+$estilo-texto:monospace;
+
+  
+    body{
+  
+      background-image:url(../imagenes/fondo.jpg);
+      background-repeat:no-repeat;
+      background-size: cover;
+      background-position: center center;
+      background-attachment: fixed;
+      font-family: "monserrat";
+      min-height: 100vh;
+      flex-wrap: wrap;
+      display: flex;
+  
+  }
+  /*estilo menu*/
+  
+  #menu{
+      justify-content: space-between;
+      text-align:center;
+      
+  }
+  
+  #menu ul li:hover{
+      transform: scale(1,2);
+      transition: 800ms ease-out,opacity 300ms linear;
+  
+  }
+  
+  #menu ul{
+      list-style:none;
+      margin:2px;
+      padding: 5px;
+  }
+  
+  #menu ul li{
+      display: inline-block;
+      padding: 2px;
+      
+  }
+  #menu ul li a{
+      color:black;
+      padding:5px 60px;
+      text-decoration: none;
+  }
+  #menu ul li a:hover{
+      transform: scale(2); 
+  }
+  
+  
+  
+  /*estilos para los textos*/
+  h1{
+      font-family: $estilo-texto;
+      text-align: left;
+      font-size: 100px;
+      margin-bottom: 20px;
+      color: $colorTitulos;
+      
+  }
+  
+  h2{
+      font-family: "source-sans-pro";
+      font-size: 40px;
+      text-align: left; 
+      margin-bottom: 20px;
+      color: $colorSubtitulos
+  
+  
+  }
+  h3{
+      font-family: "source-sans-pro";
+      font-size: 30px;
+      text-align: left; 
+      margin-bottom: 10px;
+      color: $colorTitulos
+  
+  }
+  
+  
+  
+  p{
+      font-family: "source-sans-pro";
+      font-size: 30px;
+      text-align: left;	
+      padding:3rem;
+      color: #000
+  
+  
+  }
+  
+  ul li{
+      font-family: "source-sans-pro";
+      font-size: 25px;
+      text-align: center;
+      justify-content: center;
+      list-style: none;
+      transform: skewX(-20deg);
+      background-color: rgba(235,233,249,1);background: linear-gradient(to right, rgba(235,233,249,1) 0%, rgba(216,208,239,0.89) 23%, rgba(206,199,236,0.84) 34%, rgba(197,194,235,0.63) 78%, rgba(193,191,234,0.63) 100%);
+  
+  
+  }
+   .accesorios{
+      font-family: "monserrat";
+      font-size: 30px;	
+      text-align: center;
+  
+  
+  }
+  
+  .caracteristicas{
+      font-family: "monserrat";
+      font-size: 50px;
+  
+  
+  }
+  
+  
+  
+  .formularioDeContacto{
+      font-family: "monserrat";
+      text-align: "center";
+      font-size: 40px;
+      font-weight: bold;
+  
+  }
+  
+  
+  
+   /*imagenes*/
+  
+  .pictures{
+      display: inline-flex;
+      justify-items: center;
+      width: auto;
+      height: 400px;
+      padding: 10px;
+      margin-top: 150px;
+      margin-top: 150px;
+  }
+  
+  
+  
+  
+  
+  .grid-layout main img{
+      transition: all 0.5s linear;
+      border-radius: 100%;
+      align-items: center;
+      width: 200px;
+      height: auto;
+  
+  
+  }
+  
+  
+  
+  main img:hover{
+      transform: scale(0.9);
+      transition: all 0.5s linear;
+  
+  
+  }
+  
+  .card-group .card-body{
+      background-image:url(../imagenes/fondo.jpg);
+      margin-top: 150px;
+      height: 500px;
+      width: auto;
+      padding: 1rem;
+      
+  }
+  
+  
+  
+  
+  /*FOOTER*/
+  
+   .footer {
+        position: fixed;
+        margin-top: 0;
+        bottom: 0;
+        background-color: gray;
+        width: 100%;
+        height: 200px;
+        text-align: center;
+        min-height: 100vh;
+  
+  
+  
+  
+  .footer img:hover{
+      transform: scale(1,2);
+      transition: 400ms;
+    }
+  
+   button:hover{
+       background-color: gray darken($color: #555, $amount: 30);
+       border:6px solid #555;
+       transform: scale(1,2);
+       transition: 1400ms left;
+   }
+   
